@@ -11,11 +11,6 @@ To execute this specification, run
 User can login sucessfully with valid email and password
 --------------------------------------------------------
 
-Login to reqres with email <email> and password <password>
-Then the response will be 200
-Response contains token
-
-User can't login with missing password
----------------------------------------
+* Get booking with id "1"
 
 
