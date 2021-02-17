@@ -34,6 +34,18 @@
             <artifactId>env-config</artifactId>
             <version>0.6.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.18</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
