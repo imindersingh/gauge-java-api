@@ -2,6 +2,7 @@ package com.imindersingh.http;
 
 import java.util.Map;
 
+import com.github.sitture.unirestcurl.CurlInterceptor;
 import kong.unirest.GetRequest;
 import kong.unirest.HttpRequest;
 import kong.unirest.HttpRequestWithBody;

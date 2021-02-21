@@ -1,7 +1,9 @@
 package com.imindersingh.http;
 
 import com.github.sitture.env.config.EnvConfig;
+import com.github.sitture.unirestcurl.CurlInterceptor;
 import kong.unirest.HttpResponse;
+import kong.unirest.Unirest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +14,10 @@ public class ReferenceApiRequests extends Requests {
     private final String CONTENT_TYPE  = "Content-Type";
     private final String ACCEPT_DEFAULT = "*/*";
     private final String APPLICATION_VND_JSON = "application/vnd.json";
+
+    static {
+        Unirest.config().interceptor(new CurlInterceptor(new CurlLogger()));
+    }
 
     public ReferenceApiRequests() {
         super(EnvConfig.get("HOST"));
